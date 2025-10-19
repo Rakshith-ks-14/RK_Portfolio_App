@@ -1,0 +1,67 @@
+<link href="{{ url_for('static', path='/css/home.css') }}" rel="stylesheet">
+<title>RK Portfolio</title>
+
+<div class="lines">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
+<div class="details-container">
+
+    <div class="logo-container">
+        <div>RK</div>
+    </div>
+
+    <div class="profile-container">
+        <img src="{{ url_for('static', path='/images/my_profile_image3.png') }}" alt="image">
+    </div>
+
+
+</div>
+
+<div class="bio-container">
+        <div class="greet">Hi I am</div>
+        <div class="myname">Rakshith KS</div>
+        <div class="designation">Python Programmer</div>
+        <div class="social-media-container">
+            <a href="https://www.instagram.com/the___a_r_t_i_s_t?igsh=MWFsN3R1N3l1MGl4bQ==">
+                <img src="{{ url_for('static', path='/images/instagram.png') }}" alt="img">
+            </a>
+            <a href="https://www.linkedin.com/in/rakshith-ks?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <img src="{{ url_for('static', path='/images/linked-in.png') }}" alt="img">
+            </a>
+            <a href="https://wa.me/8495963228">
+                <img src="{{ url_for('static', path='/images/whatsapp.png') }}" alt="img">
+            </a>
+        </div>
+
+        <div class="buttons">
+            <a href="/portfolio"><div class="get-started">Get Started ></div></a>
+            <a href="{{ url_for('static', path='/images/RakshithKsResume.pdf') }}" download="RakshithResume"><div class="download-cv">Download CV</div></a>
+        </div>
+
+        <div class="achivments">
+            <div class="experience">
+                <div class="achivment-numbers">5+</div>
+                <div class="achivment-details">Experience</div>
+            </div>
+            <div class="projects">
+                <div class="achivment-numbers">7+</div>
+                <div class="achivment-details">Projects Done</div>
+            </div>
+            <div class="clients">
+                <div class="achivment-numbers">5+</div>
+                <div class="achivment-details">Happy Clients</div>
+            </div>
+        </div>
+    </div>
+
+

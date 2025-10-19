@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="{{ url_for('static', path='/css/basic.css') }}">
+<title>{{ page }}</title>
+
+<body style="{{ background }}
+            background-size: 500%;
+            animation: bg-animation 20s infinite alternate">
+<div class="container">
+
+    <div class="logo-container">
+        <div>RK</div>
+    </div>
+
+    <div class="nav-bar-container">
+        <div class="home"><a href="/" onclick="switchColors(this);">Home</a></div>
+        {% if page == "services" %}
+        <div class="services"><a href="/services" style="color: rgb(255, 115, 0);">Services</a></div>
+        {% else %}
+        <div class="services"><a href="/services">Services</a></div>
+        {% endif %}
+        {% if page == "about_me" %}
+        <div class="aboutme"><a href="/aboutme" style="color: rgb(255, 115, 0);">About me</a></div>
+        {% else %}
+        <div class="services"><a href="/aboutme">About me</a></div>
+        {% endif %}
+        {% if page == "portfolio" %}
+        <div class="portfolio"><a href="/portfolio" style="color: rgb(255, 115, 0);">Portfolio</a></div>
+        {% else %}
+        <div class="portfolio"><a href="/portfolio">Portfolio</a></div>
+        {% endif %}
+        {% if page == "contact_me" %}
+        <div class="portfolio"><a href="/contactme" style="color: rgb(255, 115, 0);">Contact me</a></div>
+        {% else %}
+        <div class="contactme"><a href="/contactme">Contact me</a></div>
+        {% endif %}
+    </div>
+
+    <div class="scroll-contener">
+        <div class="tag-line-start">
+            {% for h1 in start_h1 %}
+                <h1>{{ h1 }}</h1>
+            {% endfor %}
+        </div>
+            {% for content in project_contents %}
+            {% if page == "portfolio" %}
+                <div class="project-contents">
+                    <h2 style="background: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 62, 0) 90%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                font-family: sans-serif;
+                                animation: slide-in 1s forwards;
+                                animation-timeline: view();
+                                animation-range: entry 0% cover 50%;
+                                font-size: calc(1vh + 1vw);">
+                                {{ content['name'] }}</h2>
+                    <a href="/portfolio/{{ content['PID'] }}"><img src="{{ url_for('static', path=content['image']) }}" alt="project_details"></a>
+                    <p>{{ content['p'] }}</p>
+                </div>
+            {% else %}
+                <div class="project-contents">
+                    <h2 style="background: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 62, 0) 90%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                font-family: sans-serif;
+                                animation: slide-in 1s forwards;
+                                animation-timeline: view();
+                                animation-range: entry 0% cover 50%;
+                                font-size: calc(1vh + 1vw);">
+                                {{ content['name'] }}</h2>
+                    <img src="{{ url_for('static', path=content['image']) }}" alt="project_details">
+                    <p>{{ content['p'] }}</p>
+                </div>
+            {% endif %}
+            {% endfor %}
+
+        <div class="tag-line-end">
+            {% if page == "portfolio" or page == "services" %}
+                {% for h1 in end_h1 %}
+                    <h1>{{ h1 }}</h1>
+                {% endfor %}
+            {% else %}
+                <h1>Technologies Used:</h1>
+                <div style="justify-self: center; align-self: center;">
+                {% for img in end_img %}
+                    <img src="{{ url_for('static', path=img) }}" alt="icons" style="height: calc(5vh + 5vw); width: calc(5vh + 5vw);">
+                {% endfor %}
+                </div>
+                <h1>Thank You...!</h1>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<script>
+    function switchColors(element)  {  
+        links=document.getElementsByTagName("a"); 
+        element.style.color='rgb(255, 115, 0)';  
+    }
+</script>
+</body>

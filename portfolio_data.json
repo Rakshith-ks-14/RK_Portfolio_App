@@ -1,0 +1,263 @@
+{
+    "portfolio": {
+        "background": "background: radial-gradient( circle farthest-corner at 50.3% 47.3%,  rgba(113,42,92,1) 0.1%, rgba(40,25,46,1) 90% );",
+
+        "start_h1": [
+            "Below is a list of projects I have completed or still working on with various clients and the technologies I have learned and employed to finish them.",  
+            "Please scroll down to see more."
+        ],
+
+        "project_contents": 
+        [
+            {
+                "PID": "1", 
+                "name": "Employee Tracker Web App",
+                "image": "/images/webapp_login_page.png",
+                "p": "Developed a web application Employee Tracker to maintain the employee's data and their working status.\nThis is mainly used to track the employees working tasks and progress on individual tasks.\nThere are two views one isfor Employees and another for Manages to separate the workflow.\nEmployees can track their task and where they stand, also check their efficiency graphs in dashboard.\nManager Also can get the statistics of all the employee, who reports to him/her. Based on that employee can track the efficiency and progress in individual task."
+            }, 
+            {
+                "PID": "2", 
+                "name": "Task Manager Android App",
+                "image": "/images/es_logo.jpg",
+                "p": "This app combines 3 main features Time Sheet, Leave Management and Task Tracker.\nCreated three separate modules for each features and the main modules is User and Authentication all the modules are linked together for better maintenance.\nUser module have 3 different types Employee, Manager and Admin and for each user have separate access level accordingly.\nAdmin maintains in and out of the application.\nManager can see and approve the activities of the employees who reported to him and also can create, update and delete his own tasks."
+            },
+            {
+                "PID": "3", 
+                "name": "Icon Detection Using Image Processing", 
+                "image": "/images/image-processing.jpg",
+                "p": "Automated the navigation through the user interface of the dashboard application.\nUtilized image recognition techniques to ensure precise identification of icons.\nAutomated the process of cropping identified icons and storing them in a designated folder for further analysis and validation.\nWrote comprehensive scripts to test different features of the dashboard application.\nUtilized comparison algorithms to verify the consistency and correctness of the icons, ensuring they matched the expected UI elements."
+            }
+        ],
+
+        "end_h1": ["If you're satisfied with my work, please contact me to receive my services for your new project. If you're unsure, click on any project to find out more details."]
+    },
+
+    "1": {
+        "background": "background: radial-gradient(circle, #535981, #555581, #575280, #5a4d7f, #5d497d, #5a4378, #563c73, #53366e, #482d65, #3d245c, #331b53, #28134a);",
+
+        "start_h1": [
+            "Employee Tracker Web Application"
+        ],
+
+        "project_contents": 
+        [
+            {
+                "name": "Login Page",
+                "image": "/images/webapp_login_page.png",
+                "p": "Login page designed to authenticate the user based on Employee, Manager and Admin. Here user need to fill thier Username and Password to authenticate."
+            }, 
+            { 
+                "name": "SignUP Page",
+                "image": "/images/webapp_signup.png",
+                "p": "SignUp page is designed to register themselfs for first time users. Here user need to fill all the fields and Username is same as EmailID."
+            },
+            {
+                "name": "Dashboard",
+                "image": "/images/webapp_dashboard.png",
+                "p": "Dashboard gives the overview of the tasks and it's status assigned to the employee also time taken to finish the task. Number of holidays and leaves taken by employee."
+            },
+            {
+                "name": "Profile Details",
+                "image": "/images/webapp_profile.png",
+                "p": "This will gives the details of the user, here the user can set the profile picture and also can update the password."
+            },
+            {
+                "name": "Upload Profile Picture",
+                "image": "/images/webapp_upload_pic.png",
+                "p": "This feature will allow user to update the profile picture of any image formates."
+            },
+            {
+                "name": "All Tasks of an Employee",
+                "image": "/images/webapp_all_tasks.png",
+                "p": "To display all the tasks enetred by the user by weekly. Here user can add the task using + button, and also navigate between the weeks using < and > button. Also user can update, delete and view the tasks which he created. Refresh option is also there for that table."
+            },
+            {
+                "name": "Fill/Create Task",
+                "image": "/images/webapp_fill_task.png",
+                "p": "Designed to create the user task by it's Suite Name, Number of testcases under that suite, Estimated Hours and day wise tails to fill the Status and worked Hours."
+            },
+            {
+                "name": "Previuosly Updated Tasks",
+                "image": "/images/webapp_previous_tasks.png",
+                "p": "Shows all the tasks entered/added by the user. By Name, Number Of Tasks, Start Date, End Date, Status, Estimated Time and Time taken."
+            },
+            {
+                "name": "Filter Previous Tasks",
+                "image": "/images/webapp_previous_filter.png",
+                "p": "This feature is to filter the previous tasks by Start Date and End Date. Also helps to view the perticular data present in pericular date range. There is an option to export the table data in csv as well."
+            },
+            {
+                "name": "Employee Status",
+                "image": "/images/webapp_employee_status.png",
+                "p": "This feature is available only one who logged in as manager. They can able to select the employees reports to that manager and able to view the tasks updated by them."
+            },
+            {
+                "name": "Employee Tasks",
+                "image": "/images/webapp_employee_tasks.png",
+                "p": "Here the managers can view the reporting employees tasks data and able to filter for perticular week or range of date, also can download the table in csv."
+            },
+            {
+                "name": "Logout Feature",
+                "image": "/images/webapp_logout.png",
+                "p": "Menubar which can be expandable for better view and collapse to see more content on right side of the screen. Here the user can click on Logout button to end the session, onternally Django delete the session ID of the user so nobody can access the session again for safety. If they try to access raising an exception User not logged in/Login to access the page."
+            }
+        ],
+
+        "end_img": ["/images/python.png", "/images/django.png", "/images/visual-studio.png", "/images/sqlite.png", "/images/html-5.png", "/images/css3.png", "/images/js.png"]
+    },
+
+    "2": {
+        "background": "background: radial-gradient(circle, #538161, #4d8057, #497f4c, #467d40, #457b33, #3e732a, #386c22, #316419, #235515, #164610, #09380b, #022a02);",
+
+        "start_h1": [
+            "Task Manager Android App"
+        ],
+
+        "project_contents":
+        [
+            {
+                "name": "Welcome, Login and SignUp Page",
+                "image": "/images/es_01.jpg",
+                "p": "Welcome Page designed to give the brief information and functionality about the app. Login Page is to authenticate the user through Email ID and Password. SignUp page is to register the new user to the app by getting their required details. Like First Name, Last Name, Email ID, Employee ID, DOB and Password."
+            },
+            {
+                "name": "Profile And Menubar",
+                "image": "/images/es_02.jpg",
+                "p": "Menubar is to show the menu options available, user's profile picture and name as well. The menus are My Profile, Leave Management, Timesheet, Task Tracker, Employee Tasks/Approvals (only for Managers), About and Logout. My Profile shows all details of the user filled during register, also some extra data like Reporting Manager and Project ID(s) the employee is working on. User has control to edit or delete the profile form this app."
+            },
+            {
+                "name": "Leave Management",
+                "image": "/images/es_03.jpg",
+                "p": "Leave management feature is to manage employees leaves, suppose an employee want a live then he can update here by filling the required fields From Date, To Date, Reason, Leave Type. After applying the leave the data will appear in Leave Management page and it will notify the reporting manager too."
+            },
+            {
+                "name": "Leave Management Swipe Operations",
+                "image": "/images/es_04.jpg",
+                "p": "The leave information appear in card format, option of edit and delete the leave application is provided for the user. To edit the user need to swipe the card towards right if it's not approved then it will take to edit page otherwise not. To delete the user need to swipe the card towards left and same condition applies here as well. There is a feature to indicate the user that the leave application got approved or not. When the user applies leave, then cards right side orange circle will be visible to indicate it's still not approved. If it's showing green means it's approved or it's showing red it's rejected by the Manager."
+            },
+            {
+                "name": "Time Sheet Management",
+                "image": "/images/es_05.jpg",
+                "p": "Timesheet management feature is to manage employees daily work hours of current week. How much hours the employee spent for particular work, and the same swipe operation and conditions will exactly work here as well."
+            },
+            {
+                "name": "Fill Time Sheet",
+                "image": "/images/es_06.jpg",
+                "p": "By filling timesheet the employee can become a billable resource otherwise organisation consider the employee is in bench. To fill timesheet the employee need to enter all the required fields, like Country, State, Project ID (which is already add by admin), Select Date, Work Hour, Type for all 7 days. In case employee worked in weekends there is an option to add weekend too."
+            },
+            {
+                "name": "About",
+                "image": "/images/es_07.jpg",
+                "p": "About page is designed to give information about the App and it's developer team, version and contact details of the team."
+            },
+            {
+                "name": "Employee Activities",
+                "image": "/images/es_08.jpg",
+                "p": "This feature is only available for managers not for normal employees. It allow managers to view their employees timesheet, leave application and tasks assigned to them. Also manager has an option to approve or reject their employees requests."
+            },
+            {
+                "name": "Employee Request Approval",
+                "image": "/images/es_09.jpg",
+                "p": "As already mentions above the manager can approve or deny their employees requests. If manager need to deny the request then need to mention the comment why the request been rejected."
+            }
+        ],
+
+        "end_img": ["/images/android-studio.png", "/images/kotlin.png", "/images/firebase.png"]
+    },
+
+    "3": {
+        "background": "background: radial-gradient(circle, #859d11, #88990b, #8b9406, #8e8f03, #908b01, #878102, #7d7802, #746e03, #5f5d05, #4c4c05, #3a3c04, #2a2c00);",
+
+        "start_h1": [
+            "Icon Detection (Image Processing)"
+        ],
+
+        "project_contents":
+        [
+            {
+                "name": "Image Given For Icon Detection",
+                "image": "/images/id_icon_01.jpg",
+                "p": "This is the image given for icon detection like this we can feed as many images as possible to detect the icons. This algorithm will process the images one by one and detect the "
+            },
+            {
+                "name": "Image Masking Process",
+                "image": "/images/id_masking_01.png",
+                "p": "Masking helps to detect the area of icons to get masked image, did some preprocessing like after getting the original image first converted it into gray image using cv2. Second taking the average background color and converted it into black to pop the foreground. Third applying threshold on that like otsu and adaptive. Forth step need to do erode and dilate to enhance or open up the icon shape."
+            },
+            {
+                "name": "Icon Cropped From Image",
+                "image": "/images/id_cropped_img_01.png",
+                "p": "After masking applied on the original image need to detect contour of the icons to get the x-axis, y-axis, height and width of the contour. After getting those details next step is to crop the image based on that data."
+            },
+            {
+                "name": "Exported Image Details",
+                "image": "/images/id_excel_01.png",
+                "p": "After cropping icons from original image this step is to store that in excel to utilise the data for future analysis. This contains image path, x-axis data, y-axis data, height data and width data."
+            },
+            {
+                "name": "Comparing The Icons",
+                "image": "/images/id_compare_01.png",
+                "p": "Finally exacting the data from excel and comparing with the original image to confirm the extracted icons are in the same coordinates or not."
+            }
+        ],
+
+        "end_img": ["/images/python.png", "/images/opencv_1.png", "/images/matplotlib_1.png", "/images/numpy_1.png", "/images/pandas_1.png"]
+    },
+
+    "services": {
+        "background": "background: radial-gradient(circle, #9d1111, #961314, #8f1616, #871717, #801919, #761719, #6c1518, #621317, #540e14, #450910, #380509, #2c0000);",
+
+        "start_h1": [
+            "Below is a list of services I am providing for number of customers, please scroll down to get more information about my services."
+        ],
+
+        "project_contents":
+        [
+            {
+                "name": "Web Application Design and Development",
+                "image": "/images/web_application.jpg",
+                "p": "I have the skills to design and develop web applications from concept to deployment. This includes creating intuitive user interfaces, implementing responsive designs, and building robust backend systems. I work with modern web technologies such as HTML, CSS, JavaScript for frontend, and Python (Django/FastAPI) for the backend. I also ensure applications are secure, scalable, and optimized for performance, with experience in integrating APIs, managing databases, and deploying applications to cloud platforms."
+            },
+            {
+                "name": "Android Application Development",
+                "image": "/images/andriod_app.jpg",
+                "p": "I have the capability to design and develop Android applications that are user-friendly, efficient, and scalable. My experience includes working with Android Studio, Kotlin, and XML to build intuitive interfaces and implement core functionalities. I follow best practices in mobile UI/UX design, integrate APIs and databases, and ensure performance optimization across various devices. I also handle app testing, debugging, and deployment to the Google Play Store."
+            },
+            {
+                "name": "Image Processing",
+                "image": "/images/image-processing.jpg",
+                "p": "I have experience in image processing, including techniques for enhancing, analyzing, and transforming digital images. I work with tools and libraries such as OpenCV, Pytesseract, and NumPy to perform tasks like filtering, edge detection, object recognition, and image segmentation. My skills also include preprocessing for machine learning models, feature extraction, and working with various image formats to support computer vision applications."
+            },
+            {
+                "name": "Testing Web Application",
+                "image": "/images/web_app_testing.jpg",
+                "p": "I have experience in testing web applications to ensure functionality, usability, performance, and security. I perform both manual and automated testing using tools like Python, Selenium. My process includes writing and executing test cases, identifying bugs, validating fixes, and ensuring cross-browser compatibility. I also work closely with developers to ensure quality assurance throughout the development lifecycle."
+            },
+            {
+                "name": "Data Engineering",
+                "image": "/images/data_engineering.jpg",
+                "p": "I have experience in data engineering, including designing and building scalable data pipelines, transforming raw data into usable formats, and ensuring efficient data storage and retrieval. I work with tools and technologies such as SQL, Python, Apache Spark, and ETL frameworks to process structured and unstructured data. I also manage data workflows, optimize performance, and support analytics and machine learning initiatives by ensuring data quality, consistency, and accessibility."
+            },
+            {
+                "name": "Data Analysis",
+                "image": "/images/data_analysis.png",
+                "p": "I have experience in data analysis, including collecting, cleaning, and interpreting data to generate actionable insights. I use tools like Python (Pandas, NumPy, Matplotlib), SQL, Excel, Tableau, and Power BI to perform statistical analysis, create interactive dashboards, and visualize trends. My work focuses on identifying patterns, solving business problems, and presenting findings in a clear and impactful way to support data-driven decision-making."
+            },
+            {
+                "name": "Designing Frameworks",
+                "image": "/images/design_framework.png",
+                "p": "I have the capability to design and develop custom frameworks tailored to specific project needs. This includes defining architecture, establishing reusable components, and setting up scalable and maintainable structures for development. I work with various programming languages and tools, ensuring that the frameworks I build enhance productivity, enforce best practices, and support long-term growth and flexibility in software projects."
+            }
+        ],
+
+        "end_h1": ["Any Of My Skills/Services Matching your New Requirement/Project Please Contact Me.", "Thank You...!"]
+    },
+
+    "about_me": {
+        "background": "background: radial-gradient(circle, #763e1b, #703a19, #6a3717, #653316, #5f3014, #5a2a16, #542417, #4d1f18, #43181b, #37121b, #2b0e1a, #1f0817);"
+    },
+
+    "contact_me": {
+        "background": "background-image: radial-gradient(circle, #080d1d, #090c1c, #090b1b, #0a091a, #0a0819, #0c0718, #0d0516, #0e0415, #100312, #11020f, #11020b, #110208);"
+    }
+}

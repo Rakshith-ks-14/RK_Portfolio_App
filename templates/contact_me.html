@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="{{ url_for('static', path='/css/contact_me.css') }}">
+<title>About Me</title>
+
+<body style="{{ background }}
+            background-size: 500%;
+            animation: bg-animation 20s infinite alternate;">
+    <div class="container">
+        <div class="logo-container">
+            <div>RK</div>
+        </div>
+
+        <div class="nav-bar-container">
+            <div class="home"><a href="/" onclick="switchColors(this);">Home</a></div>
+            {% if page == "services" %}
+            <div class="services"><a href="/services" style="color: rgb(255, 115, 0);">Services</a></div>
+            {% else %}
+            <div class="services"><a href="/services">Services</a></div>
+            {% endif %}
+            {% if page == "about_me" %}
+            <div class="aboutme"><a href="/aboutme" style="color: rgb(255, 115, 0);">About me</a></div>
+            {% else %}
+            <div class="services"><a href="/aboutme">About me</a></div>
+            {% endif %}
+            {% if page == "portfolio" %}
+            <div class="portfolio"><a href="/portfolio" style="color: rgb(255, 115, 0);">Portfolio</a></div>
+            {% else %}
+            <div class="portfolio"><a href="/portfolio">Portfolio</a></div>
+            {% endif %}
+            {% if page == "contact_me" %}
+            <div class="portfolio"><a href="/contactme" style="color: rgb(255, 115, 0);">Contact me</a></div>
+            {% else %}
+            <div class="contactme"><a href="/contactme">Contact me</a></div>
+            {% endif %}
+        </div>
+
+        <div class="cont-container">
+            <h1>Hello, Lets Work Together On Your Next Project</h1>
+            <h1 style="color: rgb(230, 220, 220);">Contact Details:</h1>
+            <div class="social-media-container">
+                <a href="https://www.instagram.com/the___a_r_t_i_s_t?igsh=MWFsN3R1N3l1MGl4bQ==">
+                    <img src="{{ url_for('static', path='/images/instagram.png') }}" alt="img">
+                </a>
+                <a href="https://www.linkedin.com/in/rakshith-ks?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="{{ url_for('static', path='/images/linked-in.png') }}" alt="img">
+                </a>
+                <a href="https://wa.me/8495963228">
+                    <img src="{{ url_for('static', path='/images/whatsapp.png') }}" alt="img">
+                </a>
+            </div>
+
+            <div class="cont-num-mail">
+                <div class="cont-heading">Contact No.</div>
+                <div class="cont-value">+91 8495963228</div>
+                <div class="cont-heading">Mail ID</div>
+                <div class="cont-value">rakshithks14@gmail.com</div>
+            </div>
+        </div>
+    </div>
+</body>

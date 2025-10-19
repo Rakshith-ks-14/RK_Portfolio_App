@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="{{ url_for('static', path='/css/about_me.css') }}">
+<title>About Me</title>
+
+<body style="{{ background }}
+            background-size: 500%;
+            animation: bg-animation 20s infinite alternate;">
+    <div class="container">
+        <div class="logo-container">
+            <div>RK</div>
+        </div>
+
+        <div class="nav-bar-container">
+            <div class="home"><a href="/" onclick="switchColors(this);">Home</a></div>
+            {% if page == "services" %}
+            <div class="services"><a href="/services" style="color: rgb(255, 115, 0);">Services</a></div>
+            {% else %}
+            <div class="services"><a href="/services">Services</a></div>
+            {% endif %}
+            {% if page == "about_me" %}
+            <div class="aboutme"><a href="/aboutme" style="color: rgb(255, 115, 0);">About me</a></div>
+            {% else %}
+            <div class="services"><a href="/aboutme">About me</a></div>
+            {% endif %}
+            {% if page == "portfolio" %}
+            <div class="portfolio"><a href="/portfolio" style="color: rgb(255, 115, 0);">Portfolio</a></div>
+            {% else %}
+            <div class="portfolio"><a href="/portfolio">Portfolio</a></div>
+            {% endif %}
+            {% if page == "contact_me" %}
+            <div class="portfolio"><a href="/contactme" style="color: rgb(255, 115, 0);">Contact me</a></div>
+            {% else %}
+            <div class="contactme"><a href="/contactme">Contact me</a></div>
+            {% endif %}
+        </div>
+
+        <div class="info-container">
+            <div class="profile-pic">
+                <img src="{{ url_for('static', path='/images/my_profile_image3.png') }}">
+            </div>
+            <div class="information">
+                <div>Name</div>
+                <div>Rakshith KS</div>
+                <div>Designation</div>
+                <div>Developer/Data Engineer</div>
+                <div>Experience (Years)</div>
+                <div>5.7+</div>
+                <div>Highest Education</div>
+                <div>Bachelor Of Engineering</div>
+                <div>Specialization</div>
+                <div>Electronics And Communication</div>
+                <div>Projects Done</div>
+                <div>7+</div>
+                <div>Satisfied Clients</div>
+                <div>5+</div>
+                <div>Objective</div>
+                <div>Motivated and detail-oriented professional eager to contribute to innovative projects in Python development, data engineering, image processing, web application testing, and Android application development. Passionate about leveraging technical expertise to build scalable solutions, enhance application performance, and drive impactful results.</div>
+            </div>
+        </div>
+        <a href="{{ url_for('static', path='/images/RakshithKsResume.pdf') }}" download="RakshithResume"><div class="download-cv">Download CV</div></a>
+    </div>
+</body>
+
